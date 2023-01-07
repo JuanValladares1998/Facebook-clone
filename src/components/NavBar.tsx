@@ -43,27 +43,27 @@ const NavBar = () => {
           >
             <Tooltip title="Inicio">
               <IconButton aria-label="menu" sx={{ mr: 2 }}>
-                <HomeOutlinedIcon color="inherit" sx={{ fontSize: 35 }} />
+                <HomeOutlinedIcon color="inherit" sx={{ fontSize: 34 }} />
               </IconButton>
             </Tooltip>
             <Tooltip title="Watch">
               <IconButton aria-label="menu" sx={{ mr: 2 }}>
-                <OndemandVideoIcon color="inherit" sx={{ fontSize: 35 }} />
+                <OndemandVideoIcon color="inherit" sx={{ fontSize: 34 }} />
               </IconButton>
             </Tooltip>
             <Tooltip title="MarketPlace">
               <IconButton aria-label="menu" sx={{ mr: 2 }}>
-                <StorefrontIcon color="inherit" sx={{ fontSize: 35 }} />
+                <StorefrontIcon color="inherit" sx={{ fontSize: 34 }} />
               </IconButton>
             </Tooltip>
             <Tooltip title="Grupos">
               <IconButton aria-label="menu" sx={{ mr: 2 }}>
-                <PeopleOutlineIcon color="inherit" sx={{ fontSize: 35 }} />
+                <PeopleOutlineIcon color="inherit" sx={{ fontSize: 34 }} />
               </IconButton>
             </Tooltip>
             <Tooltip title="Videojuegos">
               <IconButton aria-label="menu" sx={{ mr: 2 }}>
-                <SportsSoccerIcon color="inherit" sx={{ fontSize: 35 }} />
+                <SportsSoccerIcon color="inherit" sx={{ fontSize: 34 }} />
               </IconButton>
             </Tooltip>
           </Box>
