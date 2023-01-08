@@ -1,3 +1,15 @@
 .App {
   background-color: rgb(240, 242, 245);
+  margin-top: 64px;
+}
+
+a,
+span {
+  color: #75777b;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+a:hover {
+  text-decoration: underline;
 }
