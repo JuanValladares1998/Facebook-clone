@@ -5,10 +5,11 @@ import { styled } from "@mui/material/styles";
 const SerachBar = () => {
   const SearchBar = styled(Box)({
     backgroundColor: "#F0F2F5",
-    width: "14rem",
     padding: ".2rem",
     borderRadius: "3rem",
     border: "none",
+    display: "flex",
+    flexDirection: "row",
   });
   return (
     <SearchBar>

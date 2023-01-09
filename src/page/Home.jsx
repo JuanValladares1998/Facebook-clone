@@ -1,10 +1,10 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import BarraIzquierda from "../components/BarraIzquierda";
+import BarraIzquierda from "../components/BarraIzquierda/BarraIzquierda";
 
 const Home = () => {
   return (
-    <Grid container>
+    <Grid container sx={{ height: "100%" }}>
       <Grid item xs={4}>
         <BarraIzquierda />
       </Grid>

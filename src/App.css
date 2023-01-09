@@ -1,6 +1,7 @@
 .App {
   background-color: rgb(240, 242, 245);
   margin-top: 64px;
+  height: calc(100vh - 64px);
 }
 
 a,

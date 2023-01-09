@@ -18,6 +18,7 @@ import SmartToyIcon from "@mui/icons-material/SmartToy";
 import ExtensionIcon from "@mui/icons-material/Extension";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import { useState } from "react";
+import BotonesBarraIzquierda from "./BotonesBarraIzquierda";
 
 const BarraIzquierda = () => {
   const [navBar1, setNavBar1] = useState<boolean>(false);
@@ -29,10 +30,11 @@ const BarraIzquierda = () => {
         width: "100%",
         maxWidth: 360,
         bgcolor: "none",
-        height: "100%",
+        height: "calc(100vh - 64px)",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        overflow: "auto",
       }}
     >
       <div>
@@ -48,36 +50,17 @@ const BarraIzquierda = () => {
                 <ListItemText primary="Juan Valladares" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <PeopleOutlineIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="Amigos" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <AvTimerIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="Más recientes" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <GroupsIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="Grupos" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <StorefrontIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="Marketplace" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <OndemandVideoIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="Watch" />
-              </ListItemButton>
-            </ListItem>
+            <BotonesBarraIzquierda icon={<PeopleOutlineIcon />} text="Amigos" />
+            <BotonesBarraIzquierda
+              icon={<AvTimerIcon />}
+              text="Más recientes"
+            />
+            <BotonesBarraIzquierda icon={<GroupsIcon />} text="Grupos" />
+            <BotonesBarraIzquierda
+              icon={<StorefrontIcon />}
+              text="Marketplace"
+            />
+            <BotonesBarraIzquierda icon={<OndemandVideoIcon />} text="Watch" />
 
             {navBar1 ? (
               <>
