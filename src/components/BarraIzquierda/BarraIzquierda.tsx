@@ -61,27 +61,17 @@ const BarraIzquierda = () => {
               text="Marketplace"
             />
             <BotonesBarraIzquierda icon={<OndemandVideoIcon />} text="Watch" />
-
             {navBar1 ? (
               <>
-                <ListItem disablePadding>
-                  <ListItemButton>
-                    <PeopleOutlineIcon sx={{ marginRight: 2 }} />
-                    <ListItemText primary="Amigos" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
-                    <AvTimerIcon sx={{ marginRight: 2 }} />
-                    <ListItemText primary="Más recientes" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
-                    <GroupsIcon sx={{ marginRight: 2 }} />
-                    <ListItemText primary="Grupos" />
-                  </ListItemButton>
-                </ListItem>
+                <BotonesBarraIzquierda
+                  icon={<PeopleOutlineIcon />}
+                  text="Amigos"
+                />
+                <BotonesBarraIzquierda
+                  icon={<AvTimerIcon />}
+                  text="Más recientes"
+                />
+                <BotonesBarraIzquierda icon={<GroupsIcon />} text="Grupos" />
               </>
             ) : (
               <></>
@@ -116,45 +106,30 @@ const BarraIzquierda = () => {
                 Tus accesos directos
               </Typography>
             </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <SmartToyIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="Robotica" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <SportsEsportsIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="VideoJuegos" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ExtensionIcon sx={{ marginRight: 2 }} />
-                <ListItemText primary="Rompecabezas" />
-              </ListItemButton>
-            </ListItem>
+            <BotonesBarraIzquierda icon={<SmartToyIcon />} text="Robotica" />
+            <BotonesBarraIzquierda
+              icon={<SportsEsportsIcon />}
+              text="VideoJuegos"
+            />
+            <BotonesBarraIzquierda
+              icon={<ExtensionIcon />}
+              text="Rompecabezas"
+            />
 
             {navBar2 ? (
               <>
-                <ListItem disablePadding>
-                  <ListItemButton>
-                    <SmartToyIcon sx={{ marginRight: 2 }} />
-                    <ListItemText primary="Robotica" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
-                    <SportsEsportsIcon sx={{ marginRight: 2 }} />
-                    <ListItemText primary="VideoJuegos" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
-                    <ExtensionIcon sx={{ marginRight: 2 }} />
-                    <ListItemText primary="Rompecabezas" />
-                  </ListItemButton>
-                </ListItem>
+                <BotonesBarraIzquierda
+                  icon={<SmartToyIcon />}
+                  text="Robotica"
+                />
+                <BotonesBarraIzquierda
+                  icon={<SportsEsportsIcon />}
+                  text="VideoJuegos"
+                />
+                <BotonesBarraIzquierda
+                  icon={<ExtensionIcon />}
+                  text="Rompecabezas"
+                />
               </>
             ) : (
               <></>
