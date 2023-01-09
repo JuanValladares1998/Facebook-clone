@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import BarraIzquierda from "../components/BarraIzquierda/BarraIzquierda";
+import VistaPrincipal from "../components/VistaPrincipal/VistaPrincipal";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
         <BarraIzquierda />
       </Grid>
       <Grid item xs={4}>
-        hola
+        <VistaPrincipal />
       </Grid>
       <Grid item xs={4}>
         hola
