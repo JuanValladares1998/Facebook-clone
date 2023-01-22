@@ -1,28 +1,27 @@
 import { Box, Button } from "@mui/material";
-import React from "react";
 
 interface Props {
   icon: any;
-  estado: boolean;
+  estado: number;
   num: number;
-  setBotones: React.Dispatch<React.SetStateAction<number>>;
+  onClick(num: number): number;
 }
 
-const BotonesNavegacion = ({ icon, estado, setBotones, num }: Props) => {
+const BotonesNavegacion = ({ icon, estado, onClick, num }: Props) => {
   return (
     <Box sx={{ flex: 1 }}>
       <Button
         variant="text"
         sx={{ width: "100%" }}
         onClick={() => {
-          setBotones(num);
+          onClick(num);
         }}
       >
         {icon}
       </Button>
       <Box
         sx={
-          estado
+          estado === num
             ? {
                 with: "auto",
                 height: "5px",

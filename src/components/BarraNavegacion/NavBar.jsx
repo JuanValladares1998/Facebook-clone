@@ -21,7 +21,7 @@ import BotonesNavegacion from "./BotonesNavegacion";
 import TuneIcon from "@mui/icons-material/Tune";
 
 const NavBar = () => {
-  const [botones, setBotones] = useState(1);
+  const [botones, setBotones] = useState(2);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" color="default" sx={{ backgroundColor: "#fff" }}>
@@ -31,7 +31,8 @@ const NavBar = () => {
             sx={{
               ...alignHorizontal,
               width: { xs: "10%", lg: "100%" },
-              maxWidth: "320px",justifyContent: "start",
+              maxWidth: "320px",
+              justifyContent: "start",
             }}
           >
             <IconButton edge="start" aria-label="menu" sx={{ mr: 2 }}>
@@ -65,8 +66,8 @@ const NavBar = () => {
                   />
                 }
                 num={1}
-                setBotones={setBotones}
-                estado={botones === 1 ? true : false}
+                onClick={(i) => setBotones(i)}
+                estado={botones}
               />
               <BotonesNavegacion
                 icon={
@@ -76,8 +77,8 @@ const NavBar = () => {
                   />
                 }
                 num={2}
-                setBotones={setBotones}
-                estado={botones === 2 ? true : false}
+                onClick={(i) => setBotones(i)}
+                estado={botones}
               />
               <BotonesNavegacion
                 icon={
@@ -87,8 +88,8 @@ const NavBar = () => {
                   />
                 }
                 num={3}
-                setBotones={setBotones}
-                estado={botones === 3 ? true : false}
+                onClick={(i) => setBotones(i)}
+                estado={botones}
               />
               <BotonesNavegacion
                 icon={
@@ -98,8 +99,8 @@ const NavBar = () => {
                   />
                 }
                 num={4}
-                setBotones={setBotones}
-                estado={botones === 4 ? true : false}
+                onClick={(i) => setBotones(i)}
+                estado={botones}
               />
               <BotonesNavegacion
                 icon={
@@ -109,8 +110,8 @@ const NavBar = () => {
                   />
                 }
                 num={5}
-                setBotones={setBotones}
-                estado={botones === 5 ? true : false}
+                onClick={(i) => setBotones(i)}
+                estado={botones}
               />
             </Box>
             <Box
