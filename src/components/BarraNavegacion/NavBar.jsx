@@ -21,7 +21,7 @@ import BotonesNavegacion from "./BotonesNavegacion";
 import TuneIcon from "@mui/icons-material/Tune";
 
 const NavBar = () => {
-  const [botones, setBotones] = useState(2);
+  const [botones, setBotones] = useState(1);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" color="default" sx={{ backgroundColor: "#fff" }}>

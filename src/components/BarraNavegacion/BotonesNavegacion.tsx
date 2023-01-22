@@ -1,13 +1,14 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 interface Props {
   icon: any;
   estado: number;
   num: number;
   onClick(num: number): number;
+  texto?: string;
 }
 
-const BotonesNavegacion = ({ icon, estado, onClick, num }: Props) => {
+const BotonesNavegacion = ({ icon, estado, onClick, num, texto }: Props) => {
   return (
     <Box sx={{ flex: 1 }}>
       <Button
@@ -18,6 +19,15 @@ const BotonesNavegacion = ({ icon, estado, onClick, num }: Props) => {
         }}
       >
         {icon}
+        {texto ? (
+          <Typography
+            variant="subtitle1"
+            marginLeft={1}
+            sx={estado === num ? { color: "primary" } : { color: "gray" }}
+          >
+            {texto}
+          </Typography>
+        ) : null}
       </Button>
       <Box
         sx={
