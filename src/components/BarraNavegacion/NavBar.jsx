@@ -18,14 +18,22 @@ import Tooltip from "@mui/material/Tooltip";
 import Badge from "@mui/material/Badge";
 import SerachBar from "../SearchBar";
 import BotonesNavegacion from "./BotonesNavegacion";
+import TuneIcon from "@mui/icons-material/Tune";
 
 const NavBar = () => {
-  const [botones, setBotones] = useState(5);
+  const [botones, setBotones] = useState(1);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" color="default" sx={{ backgroundColor: "#fff" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box sx={alignHorizontal}>
+          {/*  */}
+          <Box
+            sx={{
+              ...alignHorizontal,
+              width: { xs: "10%", lg: "100%" },
+              maxWidth: "320px",justifyContent: "start",
+            }}
+          >
             <IconButton edge="start" aria-label="menu" sx={{ mr: 2 }}>
               <FacebookOutlinedIcon color="primary" sx={{ fontSize: 40 }} />
             </IconButton>
@@ -35,75 +43,103 @@ const NavBar = () => {
           <Box
             sx={{
               ...alignHorizontal,
-              width: "30%",
-              position: "absolute",
-              top: 6,
-              right: 0,
-              left: 0,
-              margin: "auto auto",
+              justifyContent: "space-around",
+              width: { xs: "10%", md: "60%" },
+              flexWrap: "nowrap",
+              maxWidth: "645px",
             }}
+            className="contenedor-botones-centrales"
           >
-            <BotonesNavegacion
-              icon={
-                <HomeOutlinedIcon
-                  color={botones === 1 ? "primary" : "inherit"}
-                  sx={{ fontSize: 34 }}
-                />
-              }
-              num={1}
-              setBotones={setBotones}
-              estado={botones === 1 ? true : false}
-            />
-            <BotonesNavegacion
-              icon={
-                <OndemandVideoIcon
-                  color={botones === 2 ? "primary" : "inherit"}
-                  sx={{ fontSize: 34 }}
-                />
-              }
-              num={2}
-              setBotones={setBotones}
-              estado={botones === 2 ? true : false}
-            />
-            <BotonesNavegacion
-              icon={
-                <StorefrontIcon
-                  color={botones === 3 ? "primary" : "inherit"}
-                  sx={{ fontSize: 34 }}
-                />
-              }
-              num={3}
-              setBotones={setBotones}
-              estado={botones === 3 ? true : false}
-            />
-            <BotonesNavegacion
-              icon={
-                <PeopleOutlineIcon
-                  color={botones === 4 ? "primary" : "inherit"}
-                  sx={{ fontSize: 34 }}
-                />
-              }
-              num={4}
-              setBotones={setBotones}
-              estado={botones === 4 ? true : false}
-            />
-            <BotonesNavegacion
-              icon={
-                <SportsSoccerIcon
-                  color={botones === 5 ? "primary" : "inherit"}
-                  sx={{ fontSize: 34 }}
-                />
-              }
-              num={5}
-              setBotones={setBotones}
-              estado={botones === 5 ? true : false}
-            />
+            <Box
+              sx={{
+                display: { xs: "none", md: "inherit" },
+                margin: "auto auto",
+                width: { xs: "83.33%", md: "100%" },
+              }}
+            >
+              <BotonesNavegacion
+                icon={
+                  <HomeOutlinedIcon
+                    color={botones === 1 ? "primary" : "inherit"}
+                    sx={{ fontSize: 34 }}
+                  />
+                }
+                num={1}
+                setBotones={setBotones}
+                estado={botones === 1 ? true : false}
+              />
+              <BotonesNavegacion
+                icon={
+                  <OndemandVideoIcon
+                    color={botones === 2 ? "primary" : "inherit"}
+                    sx={{ fontSize: 34 }}
+                  />
+                }
+                num={2}
+                setBotones={setBotones}
+                estado={botones === 2 ? true : false}
+              />
+              <BotonesNavegacion
+                icon={
+                  <StorefrontIcon
+                    color={botones === 3 ? "primary" : "inherit"}
+                    sx={{ fontSize: 34 }}
+                  />
+                }
+                num={3}
+                setBotones={setBotones}
+                estado={botones === 3 ? true : false}
+              />
+              <BotonesNavegacion
+                icon={
+                  <PeopleOutlineIcon
+                    color={botones === 4 ? "primary" : "inherit"}
+                    sx={{ fontSize: 34 }}
+                  />
+                }
+                num={4}
+                setBotones={setBotones}
+                estado={botones === 4 ? true : false}
+              />
+              <BotonesNavegacion
+                icon={
+                  <SportsSoccerIcon
+                    color={botones === 5 ? "primary" : "inherit"}
+                    sx={{ fontSize: 34 }}
+                  />
+                }
+                num={5}
+                setBotones={setBotones}
+                estado={botones === 5 ? true : false}
+              />
+            </Box>
+            <Box
+              sx={{ display: { xs: "inherit", md: "none" }, width: "16.67%" }}
+            >
+              <BotonesNavegacion
+                icon={
+                  <MenuIcon
+                    color={botones === 6 ? "primary" : "inherit"}
+                    sx={{ fontSize: 34 }}
+                  />
+                }
+                num={5}
+                setBotones={setBotones}
+                estado={botones === 6 ? true : false}
+              />
+            </Box>
           </Box>
 
-          <Box sx={alignHorizontal}>
-            <Tooltip title="Menú">
+          <Box
+            sx={{
+              ...alignHorizontal,
+              width: { xs: "70%", md: "100%" },
+              maxWidth: "210px",
+            }}
+          >
+            <Tooltip title="Menú" sx={{ marginRight: 0 }}>
               <IconButton aria-label="menu" sx={{ mr: 2 }}>
-                <MenuIcon color="inherit" sx={{ fontSize: 26 }} />
+                <TuneIcon color="inherit" sx={{ fontSize: 26 }} />
               </IconButton>
             </Tooltip>
             <Tooltip title="Messenger">

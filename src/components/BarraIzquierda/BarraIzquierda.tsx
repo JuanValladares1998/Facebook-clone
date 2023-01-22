@@ -31,7 +31,7 @@ const BarraIzquierda = () => {
         maxWidth: 360,
         bgcolor: "none",
         height: "calc(100vh - 64px)",
-        display: "flex",
+        display: { xs: "none", md: "flex" },
         flexDirection: "column",
         justifyContent: "space-between",
         overflow: "auto",
