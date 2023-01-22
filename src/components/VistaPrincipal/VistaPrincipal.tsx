@@ -4,9 +4,9 @@ import VistaHistorias from "./VistaHistorias";
 
 const VistaPrincipal = () => {
   return (
-    <Box>
+    <>
       <VistaHistorias />
-    </Box>
+    </>
   );
 };
 

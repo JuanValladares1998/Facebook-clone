@@ -1,10 +1,12 @@
 import { Box, IconButton, Tooltip } from "@mui/material";
 import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
-import React from "react";
+import { CajaBlanca } from "../../theme/theme";
 
 const VistaHistorias = () => {
   return (
-    <Box>
+    <Box
+      sx={{ ...CajaBlanca, maxWidth: "645px", margin: "1rem auto 0 auto" }}
+    >
       <Tooltip title="Videojuegos">
         <IconButton aria-label="menu" sx={{ mr: 2 }}>
           <SportsSoccerIcon color="inherit" sx={{ fontSize: 34 }} />
