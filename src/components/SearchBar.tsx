@@ -13,6 +13,7 @@ const SerachBar = () => {
   });
   return (
     <SearchBar>
+      <Box sx={{display: {xs: "none", lg: "inherit"}}}>
       <form>
         <IconButton type="submit">
           <SearchIcon />
@@ -23,6 +24,14 @@ const SerachBar = () => {
           sx={{ margin: "auto 0" }}
         />
       </form>
+      </Box>
+      <Box sx={{display: {xs: "inherit", lg: "none"}}}>
+      <form>
+        <IconButton type="submit">
+          <SearchIcon />
+        </IconButton>
+      </form>
+      </Box>
     </SearchBar>
   );
 };
