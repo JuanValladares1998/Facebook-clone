@@ -22,7 +22,6 @@ export const alignHorizontal = {
 
 export const CajaBlanca = {
   bgcolor: "white",
-  marginTop: 3,
   borderRadius: ".8rem",
   boxShadow: "0px 0px 3px 0px rgba(0,0,0,0.2)",
 };

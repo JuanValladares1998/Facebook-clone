@@ -1,6 +1,5 @@
-import { Box } from "@mui/material";
 import React from "react";
-import VistaHistorias from "./VistaHistorias";
+import VistaHistorias from "./Historias/VistaHistorias";
 
 const VistaPrincipal = () => {
   return (
