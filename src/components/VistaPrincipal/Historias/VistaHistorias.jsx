@@ -25,8 +25,7 @@ const VistaHistorias = () => {
     <Box
       sx={{
         ...CajaBlanca,
-        maxWidth: "645px",
-        margin: "1rem auto 0 auto",
+        marginTop: 2,
         overflow: "hidden",
       }}
     >
@@ -74,7 +73,7 @@ const VistaHistorias = () => {
           display: "flex",
           gap: 1,
           padding: 2,
-          minWidth: "645px",
+          minWidth: "680px",
         }}
       >
         <HistoriaDisplay
@@ -96,6 +95,10 @@ const VistaHistorias = () => {
         <HistoriaDisplay
           imgHistorias={HistoriasImg_3}
           imgHistoriasPerfil={PerfilImg_1}
+        />
+        <HistoriaDisplay
+          imgHistorias={HistoriasImg_2}
+          imgHistoriasPerfil={PerfilImg_4}
         />
       </Box>
     </Box>

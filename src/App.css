@@ -14,3 +14,25 @@ span {
 a:hover {
   text-decoration: underline;
 }
+
+.contenedor-botones-centrales {
+  margin: 0 auto;
+  position: absolute;
+}
+
+.input-publicaciones {
+  height: 40px;
+  padding: 0 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #f0f2f5;
+  font-size: 1rem;
+  width: fill;
+}
+
+.input-publicaciones:focus {
+  background-color: #e0e2e6;
+}
+.input-publicaciones:hover {
+  background-color: #e0e2e6;
+}
