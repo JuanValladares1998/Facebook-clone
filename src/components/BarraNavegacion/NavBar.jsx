@@ -25,7 +25,13 @@ const NavBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" color="default" sx={{ backgroundColor: "#fff" }}>
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Toolbar
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            position: "relative",
+          }}
+        >
           {/*  */}
           <Box
             sx={{
