@@ -5,7 +5,7 @@ import VistaPrincipal from "../components/VistaPrincipal/VistaPrincipal";
 
 const Home = () => {
   return (
-    <Grid container sx={{ height: "100%" }}>
+    <Grid container sx={{ height: "100%", marginTop: "64px" }}>
       <Grid item xs={0} lg={3}>
         <BarraIzquierda />
       </Grid>

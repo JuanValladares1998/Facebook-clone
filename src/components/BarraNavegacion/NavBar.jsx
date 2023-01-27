@@ -19,12 +19,17 @@ import Badge from "@mui/material/Badge";
 import SerachBar from "../SearchBar";
 import BotonesNavegacion from "./BotonesNavegacion";
 import TuneIcon from "@mui/icons-material/Tune";
+import { Button } from "@mui/material";
 
 const NavBar = () => {
   const [botones, setBotones] = useState(1);
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" color="default" sx={{ backgroundColor: "#fff" }}>
+    <Box sx={{ width: "100%" }}>
+      <AppBar
+        position="fixed"
+        color="default"
+        sx={{ backgroundColor: "#fff", width: "100%" }}
+      >
         <Toolbar
           sx={{
             display: "flex",
@@ -39,6 +44,8 @@ const NavBar = () => {
               width: { xs: "10%", lg: "100%" },
               maxWidth: "320px",
               justifyContent: "start",
+              position: "absolute",
+              left: "1rem",
             }}
           >
             <IconButton edge="start" aria-label="menu" sx={{ mr: 2 }}>
@@ -53,7 +60,8 @@ const NavBar = () => {
               justifyContent: "space-around",
               width: { xs: "10%", md: "60%" },
               flexWrap: "nowrap",
-              maxWidth: "645px",
+              maxWidth: "680px",
+              margin: { xs: "0 0 0 23%", sm: "0 auto" },
             }}
             className="contenedor-botones-centrales"
           >
@@ -123,17 +131,13 @@ const NavBar = () => {
             <Box
               sx={{ display: { xs: "inherit", md: "none" }, width: "16.67%" }}
             >
-              <BotonesNavegacion
-                icon={
-                  <MenuIcon
-                    color={botones === 6 ? "primary" : "inherit"}
-                    sx={{ fontSize: 34 }}
-                  />
-                }
-                num={5}
-                setBotones={setBotones}
-                estado={botones === 6 ? true : false}
-              />
+              <Button
+                variant="text"
+                sx={{ width: "100%" }}
+                
+              >
+                <MenuIcon />
+              </Button>
             </Box>
           </Box>
 
@@ -142,6 +146,8 @@ const NavBar = () => {
               ...alignHorizontal,
               width: { xs: "70%", md: "100%" },
               maxWidth: "210px",
+              position: "absolute",
+              right: "2rem",
             }}
           >
             <Tooltip title="Menú" sx={{ marginRight: 0 }}>
