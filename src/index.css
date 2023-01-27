@@ -17,7 +17,7 @@ code {
   transition: all ease 0.3s;
 }
 
-.imgHistorias:hover {
+.historia:hover .imgHistorias {
   transform: scale(105%);
 }
 

@@ -24,6 +24,7 @@ const HistoriaDisplay = ({ imgHistorias, imgHistoriasPerfil }: Props) => {
         position: "relative",
         backgroundColor: "#eee",
       }}
+      className="historia"
     >
       <img
         className="imgHistoriasPerfil"
