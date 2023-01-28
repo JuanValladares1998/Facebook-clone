@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
-import React from "react";
-import VistaHistorias from "./Historias/VistaHistorias";
+import ContenedorPublicaciones from "./Publicaciones/ContenedorPublicaciones";
 import PublicacionesInput from "./Publicaciones/PublicacionesInput";
+import VistaHistorias from "./Historias/VistaHistorias";
 
 const VistaPrincipal = () => {
   return (
@@ -12,10 +12,16 @@ const VistaPrincipal = () => {
         display: "flex",
         flexDirection: "column",
         gap: 2,
+        height: "calc(100vh - 64px)",
+        overflowX: "auto",
+        top: "0",
       }}
+      className="VistaPrincipal"
     >
       <VistaHistorias />
       <PublicacionesInput />
+      <ContenedorPublicaciones />
+      <ContenedorPublicaciones />
     </Box>
   );
 };

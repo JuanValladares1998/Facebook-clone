@@ -8,3 +8,5 @@ export const PerfilImg_1 = require("./Perfiles/child-g834b7e13f_640.jpg");
 export const PerfilImg_2 = require("./Perfiles/girl-g5788feeca_640.jpg");
 export const PerfilImg_3 = require("./Perfiles/man-g54f751319_640.jpg");
 export const PerfilImg_4 = require("./Perfiles/man-gca3e7b632_640.jpg");
+
+export const like = require("./Reacciones/like.svg");

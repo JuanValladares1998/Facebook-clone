@@ -23,6 +23,7 @@ const HistoriaDisplay = ({ imgHistorias, imgHistoriasPerfil }: Props) => {
         cursor: "pointer",
         position: "relative",
         backgroundColor: "#eee",
+        width: "200px",
       }}
       className="historia"
     >

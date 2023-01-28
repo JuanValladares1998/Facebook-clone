@@ -1,6 +1,5 @@
 import { Avatar, Divider } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
 import { alignHorizontal, CajaBlanca } from "../../../theme/theme";
 import BotonesPublicaciones from "./BotonesPublicaciones";
 import VideocamIcon from "@mui/icons-material/Videocam";

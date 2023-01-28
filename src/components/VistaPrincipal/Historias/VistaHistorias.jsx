@@ -26,7 +26,6 @@ const VistaHistorias = () => {
       sx={{
         ...CajaBlanca,
         marginTop: 2,
-        overflow: "hidden",
       }}
     >
       <Box sx={{ ...alignHorizontal }}>
@@ -73,7 +72,7 @@ const VistaHistorias = () => {
           display: "flex",
           gap: 1,
           padding: 2,
-          minWidth: "680px",
+          
         }}
       >
         <HistoriaDisplay

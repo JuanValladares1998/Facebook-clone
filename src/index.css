@@ -31,3 +31,7 @@ code {
   z-index: 1;
   border: solid white 0.3rem;
 }
+
+img {
+  width: 100%;
+}
